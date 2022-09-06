@@ -1,0 +1,67 @@
+
+   <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Encriptador de Texto</title>	
+	<meta name="viewport" content="width=device-width">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+	<header>
+            <img src="images/logoAlura.png" alt="Logo Alura">
+	</header>
+	<main>
+		<div class="formBox">
+			<form action="" id="formularioEntrada">
+        
+				<textarea name="inputTexto" id="inputTexto" rows="10" cols="70" placeholder= "Ingrese el texto aqui" autofocus></textarea>
+				<br>
+				<label for="input-texto"> Solo letras minúsculas, sin acento</label>
+				<!-- <input class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui">-->
+				<br></br>
+				<input class="btn" type="button" value="encriptar!" id="btnEncriptar">
+				<input class="btn" type="button" value="desencriptar!" id="btnDesencriptar">
+			</form>
+		</div>
+	<br><br>
+		<div class="msgBox">
+			<div class ="textoVacio" name = "textoVacio">
+				<textarea name="textInputSalida" id="textInputSalida" rows="10" cols="70"></textarea>
+				<img src="images/munheco.png" alt="Imagen de texto vacio" id = "muneco">
+				<p id ="pUno"> Ningún mensaje fue encontrado</p>
+				<p id ="pDos"> Por favor ingresa el texto que desees encriptar o desencriptar </p>
+				<script>
+					document.getElementById("textInputSalida").style.display = "none";
+				</script>
+				<!--<input class="text-input-salida" type="text" id="msg">-->
+				<br></br>
+				<input class="btn" type="button" value="copiar"id="btnCopy">
+			</div>      
+		</div>
+
+
+  </main>
+  <footer>
+            
+	</footer>
+  <script src="dist/clipboard.min.js"></script>
+  <script src="script.js"></script>
+  <script src="Copiar-pegar.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
